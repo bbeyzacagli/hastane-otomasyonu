@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+﻿ <!DOCTYPE HTML>
     <html>
     <head>
     <title>Beyza Hastanesi</title>
@@ -52,99 +52,38 @@
             </div>
             <div class="header-bottom">
                 <div id="cssmenu">
-                    <ul>
-                       <li class="active"><a href="@Url.Action("Index", "Home")"><span>Anasayfa</span></a></li>
-                       <li><a href="services.html"><span>POLİKLİNİKLERİMİZ</span></a></li>
-                       <li><a href="contact.html"><span>İLETİŞİM BİLGİLERİMİZ</span></a></li>
-                       <li class="last"><a href="@Url.Action("Index", "Appointment")"><span>Randevu al</span></a></li>
+
+                    <ul class="navbar-nav  flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Index">ANASAYFA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " asp-area="" asp-controller="Polyclinic" asp-action="Index">POLİKLİNİKLERİMİZ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Privacy">İLETİŞİM BİLGİLERİMİZ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " asp-area="" asp-controller="Appointment" asp-action="Index">RANDEVU AL</a>
+                        </li>
                     </ul>
+
                 </div>
                 <div class="clear"></div>
             </div>
         </div>
-        <div class="banner">
-            <div id="wrapper">
-                <div class="slider-wrapper theme-default">
-                    <div id="slider" class="nivoSlider">
-                     <img src="images/banner1.jpg"/>
-                     <img src="images/banner2.jpg"/>
-                     <img src="images/banner3.jpg"/>
-                     <img src="images/banner4.jpg"/>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="main">
-                    <div class="content-top">
-                        <div>
-                                <div class="title-desc"><p>Hakkımızda</p><hr></div>
-                                <div class="clear"></div>
-                        </div>
-                            <p>Sakarya şehrinin önde gelen sağlık kuruluşlarından biri olan Beyza Hastanesi 2002 yılında kurulmuştur. Amacımız hasta odaklı yaklaşımımız ve uzman kadromuz ile toplumumuza kaliteli sağlık hizmetlerini sunmaktır.</p>
-                            <hr><hr>
-                        </div>
-                        <div class="clear"></div>
-
-                        <div>
-                            <div class="title-desc"><p>Vİzyonumuz</p><hr></div>
-                            <div class="clear"></div>
-                        </div>
-                        <p>
-                            Sağlıklı bir toplum için öncü sağlık hizmetleri sunmak.
-                        </p>
-                        <hr><hr><hr>
-                        </div>
-
-                        <div class="clear"></div>
-
-                        <div>
-                            <div class="title-desc"><p>Mİsyonumuz</p><hr></div>
-                            <div class="clear"></div>
-                        </div>
-                        <p>
-                            Hasta memnuniyetini ön planda tutarak bilimsel gelişmelere açık, etik değerlere bağlı, sürekli eğitim ve teknolojiyi kullanarak sağlık hizmeti sunmak.
-                        </p>
-                        <hr>
-                        </div>
 
 
-                        <div class="content-bottom">
-                            <div class="col_1_of_bottom span_1_of_bottom">
-                                <img src="images/pic.jpg" alt="" />
-                                <div class="main_link">
-                                    <h5>Ağız ve Dİş Sağlığı</h5>
-                                    <p style="text-transform: none; font-size: 15px;">Bireylerin oral sağlıklarını koruma, tedavi ve geliştirmeye odaklanarak modern tıbbi teknoloji ve uzman kadrosuyla geniş bir diş hekimliği hizmeti sunmaktadır.</p>
-                                </div>
 
-                            </div>
-                            <div class="col_1_of_bottom span_1_of_bottom">
-                                <img src="images/pic1.jpg" alt="" />
-                                <div class="main_link">
-                                    <h5>Dahİlİye</h5>
-                                    <p style="text-transform: none; font-size: 16px;">İç hastalıkları konusunda uzmanlaşmış bir birim olarak, çeşitli tanı ve tedavi yöntemleriyle genel sağlık sorunlarına çözüm sunar.</p>
-                                </div>
-                            </div>
-                            <div class="col_1_of_bottom span_1_of_bottom">
-                                <img src="images/pic3.jpg" alt="" />
-                                <div class="main_link">
-                                    <h5>NÖROLOJİ</h5>
-                                    <p style="text-transform: none; font-size: 16px;">Sinir sistemi hastalıkları ve bozukluklarına yönelik ileri teknoloji kullanarak nörolojik muayene, tanı, tedavi ve takip hizmetleri sunmaktadır.</p>
-                                </div>
-                            </div>
-                            <div class="clear"></div>
-
-                            <div style="display: flex; justify-content: center; align-items: center;">
-                                <a href="#" class="btn btn-primary">more</a>
-                            </div>
-                        </div>
-                    </div>
-        <div class="footer">
-            <div class="copy">
-                <p> © 2023 | Beyza Çağlı tarafından tasarlandı.</p>
-            </div>
-        </div>
     <div>
         @RenderBody()
     </div>
+
+            <footer class="footer">
+                <div class="container">
+                    <p align="center">&copy; 2023 | Beyza Çağlı tarafından tasarlandı.<a asp-area="" asp-controller="Home" asp-action="Privacy">    İletişim</a></p>
+                </div>
+            </footer>
+            <br /><br />
     </body>
-    </html>
+    </html> 
