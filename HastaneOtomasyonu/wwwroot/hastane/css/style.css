@@ -913,7 +913,7 @@ ul.list3 li {
 
 	.testimonials h3, .sidebar h3 {
 		color: #60B6E6;
-		font: 12px/12px Arial,Helvetica,sans-serif;
+		font: 12px/12px 'Times New Roman', Times, serif;
 		margin: 0;
 		margin-bottom: 10px;
 		text-transform: uppercase;
@@ -955,13 +955,13 @@ ul.list3 li {
 	text-transform: uppercase;
 	margin-top: 0.5%;
 	font-weight: 600;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Times New Roman', Times, serif;
 	color: #373737;
 }
 
 .about_desc p span {
 	color: #60B6E6;
-	font: 12px/12px Arial,Helvetica,sans-serif;
+	font: 12px/12px 'Times New Roman', Times, serif;
 	margin: 0;
 	margin-bottom: 10px;
 	text-transform: uppercase;
@@ -997,7 +997,7 @@ ul.list3 li {
 
 .span_2_of_1 h4 {
 	color: #60B6E6;
-	font: 13px/13px Arial,Helvetica,sans-serif;
+	font: 13px/13px 'Times New Roman', Times, serif;
 	margin: 0;
 	margin-bottom: 10px;
 	text-transform: uppercase;
@@ -1043,7 +1043,7 @@ ul.list3 li {
 
 .gallery-grid h4 {
 	color: #60B6E6;
-	font: 15px/15px Arial,Helvetica,sans-serif;
+	font: 15px/15px 'Times New Roman', Times, serif;
 	margin: 0;
 	margin-bottom: 10px;
 	text-transform: uppercase;
@@ -1134,7 +1134,7 @@ ul.list3 li {
 		outline: none;
 		color: #464646;
 		font-size: 0.8125em;
-		font-family: Arial, Helvetica, sans-serif;
+		font-family: 'Times New Roman', Times, serif;
 		box-shadow: inset 0px 0px 3px #999;
 		-webkit-box-shadow: inset 0px 0px 3px #999;
 		-moz-box-shadow: inset 0px 0px 3px #999;
@@ -1157,7 +1157,7 @@ ul.list3 li {
 		-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.50);
 		-webkit-border-radius: 5px;
 		border-radius: 2px;
-		font-family: Arial, Helvetica, sans-serif;
+		font-family: 'Times New Roman', Times, serif;
 		position: absolute;
 		right: 0;
 	}

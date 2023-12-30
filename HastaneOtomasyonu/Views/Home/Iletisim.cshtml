@@ -1,0 +1,140 @@
+@{
+	ViewData["Title"] = "İletişim Bilgileri";
+	Layout = null;
+}
+
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>İletişim Bilgileri</title>
+	<link href="~/hastane/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="~/hastane/css/default.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="~/hastane/css/nivo-slider.css" rel="stylesheet" type="text/css" media="all" />
+	<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<script src="~/hastane/js/jquery-1.9.0.min.js"></script>
+	<script src="~/hastane/js/jquery.nivo.slider.js"></script>
+	<script type="text/javascript">
+		$(window).load(function () {
+			$('#slider').nivoSlider();
+		});
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="wrapper-box">
+			<div class="header">
+				<div class="header-top">
+					<div class="logo">
+						<a href="@Url.Action("Index", "Home")">
+							<img src="~/hastane/images/logo.png" alt="logo" style="width: 30%;" />
+						</a>
+					</div>
+					<style>
+						#randevuAlButtonContainer {
+							margin-top: 20px;
+							text-align: right;
+						}
+
+						.actionButton {
+							background-color: #EF9BFC;
+							color: white;
+							border: none;
+							padding: 10px 20px;
+							border-radius: 100px;
+							text-decoration: none;
+							display: inline-block;
+							font-size: 18px;
+							cursor: pointer;
+							margin-right: 10px;
+						}
+					</style>
+
+					<div id="randevuAlButtonContainer">
+						<a class="actionButton" href="@Url.Action("Login", "Giris")">Giriş Yap</a>
+						<a class="actionButton" href="@Url.Action("randevuAl", "RandevuAl")">Randevu Al</a>
+						<a class="actionButton" href="@Url.Action("Register", "Giris")">Kayıt Ol</a>
+					</div>
+
+					<div class="clear"></div>
+				</div>
+				<div class="header-bottom">
+					<div id="cssmenu">
+						<ul>
+							<li><a href="@Url.Action("Index", "Home")"><span>ANASAYFA</span></a></li>
+							<li><a href="services.html"><span>POLİKLİNİKLER</span></a></li>
+							<li class ="active"><a href="@Url.Action("Iletisim", "Home")"><span>İLETİŞİM BİLGİLERİ</span></a></li>
+						</ul>
+					</div>
+
+					<div class="clear"></div>
+				</div>
+			</div>
+
+			<style>
+				body {
+					font-family: 'Times New Roman', Times, serif;
+					background-color: #F8EDF5;
+					margin: 0;
+					padding: 0;
+					color: #333;
+				}
+
+				.contact-container {
+					max-width: 800px;
+					margin: 0 auto;
+					background-color: #fff;
+					padding: 20px;
+					border-radius: 8px;
+					box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+					margin-top: 50px;
+					text-align: center;
+				}
+
+				.contact-info {
+					margin-bottom: 20px;
+					text-align: left;
+				}
+
+				.map-container {
+					height: 300px;
+					margin-top: 20px;
+				}
+
+				.contact-container b {
+					font-weight: bold;
+
+				}
+
+			</style>
+
+			<div class="contact-container"> 
+				<b>İletişim Bilgileri</b>
+
+				<div class="contact-info">
+					<p><b>Telefon:</b> +90 (264) 295 69 79</p>
+					<p><b>E-posta:</b> bf@sakarya.edu.tr</p>
+					<p><b>Adres:</b> Bilgisayar ve Bilişim Bilimleri Fakültesi Haşim Gürdamar Binası, Serdivan / SAKARYA</p>
+				</div>
+				<div class="map-container">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.593733916682!2d30.328109593685678!3d40.74218327548208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccaded70ee240b%3A0xd81085b5551312fd!2sBilgisayar%20Ve%20Bili%C5%9Fim%20Bilimleri%20Fak%C3%BCltesi!5e0!3m2!1str!2str!4v1703689216948!5m2!1str!2str"
+					width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<br /><br /><br /><br />
+			</div>
+			<br /><br /><br /><br />
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+				<br /><br />
+			<p align="center">&copy; 2023 | BEYZA ÇAĞLI tarafından tasarlandı.
+		</div>
+	</footer>
+	<br />
+	<br />
+</body>
+</html>
