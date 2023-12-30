@@ -43,7 +43,7 @@ namespace HastaneOtomasyonu.Controllers
 
             await hastaneCS.KullaniciHesaplar.AddAsync(kullanici);
             await hastaneCS.SaveChangesAsync();
-            ViewBag.correct = "Kayıt başarıyla tamamlandı! Giriş yapabilmek için lütfen Giriş Yap sayfasına geçiniz.";
+            ViewBag.correct = "Kayıt başarıyla tamamlandı! Giriş yapabilmek için \"Giriş Yap\" sayfasına geçiniz.";
             return View("Register");
         }
 

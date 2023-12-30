@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
-	<title>Diamond Hastanesi</title>
+	<title>BEYZA HASTANESİ</title>
 	<link href="~/hastane/css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -22,63 +22,43 @@
 			<div class="header">
 				<div class="header-top">
 					<div class="logo">
-						<a href="index.html"><img src="images/logo.png" style="width:25%;" alt="" /></a>
+						<a href="@Url.Action("Index", "Home")"><img src="images/logo.png" alt="logo" style="width: 30%;" /></a>
 					</div>
 					<style>
+						.actionButton {
+							background-color: #EF9BFC;
+							color: white;
+							border: none;
+							padding: 10px 20px;
+							border-radius: 100px;
+							text-decoration: none;
+							display: inline-block;
+							font-size: 18px;
+							cursor: pointer;
+							margin-right: 10px;
+						}
+
 						#randevuAlButtonContainer {
 							margin-top: 20px;
 							text-align: right;
 						}
-
-						#randevuAlButton {
-							background-color: #d9155c;
-							color: white;
-							border: none;
-							padding: 10px 20px;
-							border-radius: 40px;
-							text-decoration: none;
-							display: inline-block;
-							font-size: 15px;
-							cursor: pointer;
-						}
-
-						#girisYapButton {
-							background-color: #d9155c;
-							color: white;
-							border: none;
-							padding: 10px 20px;
-							border-radius: 40px;
-							text-decoration: none;
-							display: inline-block;
-							font-size: 15px;
-							cursor: pointer;
-						}
 					</style>
 
 					<div id="randevuAlButtonContainer">
-						<a id="girisYapButton" href="@Url.Action("girisYap", "KullanıcıHesap")">Giriş Yap</a>
-						<a id="randevuAlButton" href="@Url.Action("RandevuAl", "Randevu")">Randevu Al</a>
+						<a id="girisYapButton" class="actionButton" href="@Url.Action("girisYap", "KullanıcıHesap")">Giriş Yap</a>
+						<a id="randevuAlButton" class="actionButton" href="@Url.Action("RandevuAl", "Randevu")">Randevu Al</a>
 					</div>
+
+
 					<div class="clear"></div>
 				</div>
 				<div class="header-bottom">
 					<div id="cssmenu">
 						<ul>
-							<li class="active">
-								<a href="@Url.Action("Index", "Home")">
-									<span>ANASAYFA</span>
-								</a>
-							</li>
-							<li><a href="about.html"><span>HASTANEMİZ</span></a></li>
-							<li class="has-sub">
-								<a href="services.html"><span>POLİKLİNİKLER</span></a>
-								<ul>
-									<li class="has-sub"><a href="services.html"><span>Service 1</span></a></li>
-									<li class="has-sub"><a href="services.html"><span>Service 2</span></a></li>
-								</ul>
-							</li>
-
-							<li class="last"><a href="contact.html"><span>İLETİŞİM BİLGİLERİ</span></a></li>
+							<li class="active"><a href="@Url.Action("Index", "Home")"><span>ANASAYFA</span></a></li>
+							<li><a href="services.html"><span>POLİKLİNİKLER</span></a></li>
+							<li><a href="about.html"><span>RANDEVU AL</span></a></li>
+							<li><a href="contact.html"><span>İLETİŞİM BİLGİLERİ</span></a></li>
 						</ul>
 					</div>
 
@@ -86,70 +66,18 @@
 				</div>
 			</div>
 
-			<div class="main">
-
-
-
-
-				<div class="footer">
-					<div class="footer-top">
-						<div class="col_1_of_4 span_1_of_4">
-							<h3>INFORMATION</h3>
-							<ul>
-								<li><a href="#">About us</a></li>
-								<li><a href="#">Sitemap</a></li>
-								<li><a href="#">Contact</a></li>
-								<li><a href="#">Terms and conditions</a></li>
-								<li><a href="#">Legal Notice</a></li>
-							</ul>
-						</div>
-						<div class="col_1_of_4 span_1_of_4">
-							<h3>CATEGORIES</h3>
-							<ul>
-								<li><a href="#">New products</a></li>
-								<li><a href="#">top sellers</a></li>
-								<li><a href="#">Specials</a></li>
-								<li><a href="#">Products</a></li>
-								<li><a href="#">Comments</a></li>
-							</ul>
-						</div>
-						<div class="col_1_of_4 span_1_of_4">
-							<h3>My ACCOUNT</h3>
-							<ul>
-								<li><a href="#">Your Account</a></li>
-								<li><a href="#">Personal info</a></li>
-								<li><a href="#">Prices</a></li>
-								<li><a href="#">Address</a></li>
-								<li><a href="#">Locations</a></li>
-							</ul>
-						</div>
-						<div class="col_1_of_4 span_1_of_4 footer-lastgrid">
-							<h3>BİZE ULAŞIN</h3>
-							<ul class="list3">
-								<li>
-									<img src="images/home.png" alt="" />
-									<div class="extra-wrap">
-										<p>Sakarya üniversitesi,<br>Bilgisayar ve Bilişim Bilimleri Fakültesi.</p>
-									</div>
-								</li>
-								<li>
-									<img src="images/phone.png" alt="" />
-									<div class="extra-wrap">
-										<p>+90 555 444 3232</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="clear"></div>
-					</div>
-					<div class="copy">
-						<p> © 2023 SAKARYA ÜNİVERSİTESİ | Design by İREM DEĞERLİ</a></p>
-					</div>
-				</div>
-			</div>
 		</div>
-		<div>
-			@RenderBody()
+	</div>
+	<div>
+		@RenderBody()
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<p align="center">&copy; 2023 | BEYZA ÇAĞLI tarafından tasarlandı.<a asp-area="" asp-controller="Home" asp-action="Privacy"></a></p>
 		</div>
+	</footer>
+	<br />
+	<br />
 </body>
 </html>

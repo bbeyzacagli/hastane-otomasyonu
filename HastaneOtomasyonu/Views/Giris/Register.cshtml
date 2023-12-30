@@ -1,10 +1,10 @@
 ﻿@model HastaneOtomasyonu.Models.KullaniciHesap
 @{
-    ViewData["Title"] = "Register";
+    ViewData["Title"] = "Kayıt Olun";
     Layout = "~/Views/Shared/GirisKayitLayout.cshtml";
 }
 
-<h2>Kaydol</h2>
+@* <h2>Kaydol</h2>
 <div class="outer-box">
     <div class="login-box">
         <h4 class="login-text">Giriş</h4>
@@ -20,5 +20,95 @@
             </form>
         </center>
     </div>
-</div>
+</div> *@
 
+
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .page-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .register-form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #EF9BFC;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-form">
+        <h2 class="page-title">Kaydol</h2>
+        <form action="Register" method="post">
+            <div class="form-group">
+                <label for="firstName">İsim</label>
+                <input type="text" id="firstName" name="FirstName" placeholder="İsim" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Soyisim</label>
+                <input type="text" id="lastName" name="LastName" placeholder="Soyisim" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="Email" placeholder="E-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Şifre</label>
+                <input type="password" id="password" name="Password" placeholder="Şifre" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Şifre Onayla</label>
+                <input type="password" id="confirmPassword" name="CPassword" placeholder="Şifre Onayla" required>
+            </div>
+            <button id="btn-register">Kaydol</button>
+        </form>
+    </div>
+</body>
+</html>

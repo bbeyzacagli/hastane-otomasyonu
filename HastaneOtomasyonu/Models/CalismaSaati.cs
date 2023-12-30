@@ -17,7 +17,7 @@ namespace HastaneOtomasyonu.Models
 		[Display(Name = "DoktorSoyad")]
 		public string? DoktorlarSoyad { get; set; }
 
-		[Required(ErrorMessage = "Çalışma günü bos olmaz")]
+		[Required(ErrorMessage = "Çalışma günü boş olamaz")]
         [Display(Name = "calismaGunu")]
         public string? CalismaGunu { get; set; }
 

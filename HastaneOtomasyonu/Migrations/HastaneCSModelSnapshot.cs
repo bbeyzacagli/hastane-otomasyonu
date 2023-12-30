@@ -122,9 +122,9 @@ namespace HastaneOtomasyonu.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("HastalarKanGrubu")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    //b.Property<string>("HastalarKanGrubu")
+                    //    .IsRequired()
+                    //    .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("HastalarSoyad")
                         .IsRequired()

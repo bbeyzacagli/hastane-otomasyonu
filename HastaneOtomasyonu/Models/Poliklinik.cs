@@ -15,7 +15,7 @@ namespace HastaneOtomasyonu.Models
         public string? PoliklinikAd {  get; set; }
         
         [Required(ErrorMessage = "Doktor sayısı giriniz.")]
-        [Range(1,7, ErrorMessage ="Doktor sayısı 1 ile 17 arasında olmalı")]
+        [Range(1,7, ErrorMessage ="Doktor sayısı 1 ile 7 arasında olmalı")]
         public int DoktorSayisi{ get; set; }
     }
 }

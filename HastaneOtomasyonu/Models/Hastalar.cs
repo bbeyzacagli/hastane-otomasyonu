@@ -27,15 +27,15 @@ namespace HastaneOtomasyonu.Models
         [DisplayFormat(DataFormatString ="{0:dd-MM-yyyy}",ApplyFormatInEditMode = true)]
         public string? HastalarDogumTarihi { get; set; }
         
-        [Required(ErrorMessage = "Cinsiyet boş olamaz")]
+        [Required(ErrorMessage = "Hasta cinsiyeti boş olamaz")]
         [Display(Name = "HastaCinsiyet")]
         [EnumDataType(typeof(Cinsiyet))]
         public string? HastalarCinsiyet { get; set; }
       
-        [Required(ErrorMessage = "Kan grubu boş olamaz")]
-        [Display(Name = "HastaKanGrubu")]
-        [EnumDataType(typeof(KanGrubu))]
-        public string? HastalarKanGrubu { get; set; }
+        //[Required(ErrorMessage = "Kan grubu boş olamaz")]
+        //[Display(Name = "HastaKanGrubu")]
+        //[EnumDataType(typeof(KanGrubu))]
+        //public string? HastalarKanGrubu { get; set; }
 
     }
     public enum Cinsiyet
@@ -44,16 +44,16 @@ namespace HastaneOtomasyonu.Models
         kadın,
         diğer
     }
-    public enum KanGrubu
-    {
-        Apozitif,
-        Bpozitif,
-        Sıfırpoizit,
-		ABpozitif,
-		Anegatif,
-        Bnegatif,
-        Sıfırnegatif,
-        ABnegatif
+//    public enum KanGrubu
+//    {
+//        Apozitif,
+//        Bpozitif,
+//        Sıfırpoizit,
+//		ABpozitif,
+//		Anegatif,
+//        Bnegatif,
+//        Sıfırnegatif,
+//        ABnegatif
 
-    }
+//    }
 }
