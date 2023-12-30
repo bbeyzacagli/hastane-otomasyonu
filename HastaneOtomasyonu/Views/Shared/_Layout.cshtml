@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
-<title>Diamond Hastanesi</title>
+<title>BEYZA HASTANESİ</title>
 <link href="~/hastane/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -30,202 +30,127 @@
 							text-align: right;
 						}
 
-						#randevuAlButton {
-							background-color: #d9155c; /* Açık mor arka plan rengi */
-							color: white; /* Koyu mor metin rengi */
-							border: none; /* Kenarlık olmaması */
-							padding: 10px 20px; /* Buton içerisindeki içerikle arka plan arasındaki boşluklar */
-							border-radius: 40px; /* Yuvarlak kenarlıklı buton */
-							text-decoration: none; /* Link görünümündeki alt çizgiyi kaldırma */
+						.actionButton {
+							background-color: #EF9BFC;
+							color: white;
+							border: none;
+							padding: 10px 20px;
+							border-radius: 100px;
+							text-decoration: none;
 							display: inline-block;
-							font-size: 15px;
+							font-size: 18px;
 							cursor: pointer;
-						}
-						#girisYapButton {
-							background-color: #d9155c; /* Açık mor arka plan rengi */
-							color: white; /* Koyu mor metin rengi */
-							border: none; /* Kenarlık olmaması */
-							padding: 10px 20px; /* Buton içerisindeki içerikle arka plan arasındaki boşluklar */
-							border-radius: 40px; /* Yuvarlak kenarlıklı buton */
-							text-decoration: none; /* Link görünümündeki alt çizgiyi kaldırma */
-							display: inline-block;
-							font-size: 15px;
-							cursor: pointer;
-						}
-
-						#kayitOlButton {
-							background-color: #d9155c; /* Açık mor arka plan rengi */
-							color: white; /* Koyu mor metin rengi */
-							border: none; /* Kenarlık olmaması */
-							padding: 10px 20px; /* Buton içerisindeki içerikle arka plan arasındaki boşluklar */
-							border-radius: 40px; /* Yuvarlak kenarlıklı buton */
-							text-decoration: none; /* Link görünümündeki alt çizgiyi kaldırma */
-							display: inline-block;
-							font-size: 15px;
-							cursor: pointer;
+							margin-right: 10px;
 						}
 					</style>
 
 					<div id="randevuAlButtonContainer">
-						<a id="girisYapButton" href="@Url.Action("girisYap", "GirisYap")">Giriş Yap</a>
-                        <a id="randevuAlButton" href="@Url.Action("randevuAl", "RandevuAl")">Randevu Al</a>
-						<a id="kayıtOlButton" href="@Url.Action("kayıtOl", "KayıtOl")">Kayıt Ol</a>
-                    </div>
+						<a class="actionButton" href="@Url.Action("Login", "Giris")">Giriş Yap</a>
+						<a class="actionButton" href="@Url.Action("randevuAl", "RandevuAl")">Randevu Al</a>
+						<a class="actionButton" href="@Url.Action("Register", "Giris")">Kayıt Ol</a>
+					</div>
+
 			<div class="clear"></div> 
 		</div>
 		<div class="header-bottom">
 			<div id="cssmenu">
 				<ul>
-				   <li class="active">
-					   <a href="@Url.Action("Index", "Home")">
-						   <span>ANASAYFA</span></a>
-					</li>
+				   <li class="active"><a href="@Url.Action("Index", "Home")"><span>ANASAYFA</span></a></li>
 				   <li><a href="about.html"><span>HASTANEMİZ</span></a></li>
-				   <li class="has-sub"><a href="services.html"><span>POLİKLİNİKLER</span></a>
-				      <ul>
-				         <li class="has-sub"><a href="services.html"><span>Service 1</span></a></li>
-				         <li class="has-sub"><a href="services.html"><span>Service 2</span></a></li>
-				      </ul>
-				   </li>
-				   
-				   <li class="last"><a href="contact.html"><span>İLETİŞİM BİLGİLERİ</span></a></li>
+				   <li><a href="services.html"><span>POLİKLİNİKLER</span></a></li>
+				   <li><a href="contact.html"><span>İLETİŞİM BİLGİLERİ</span></a></li>
 				</ul>
 			</div>
 
 			<div class="clear"></div> 
 		</div>
 	</div>
-<div class="banner">
-	<div id="wrapper">
- 		<div class="slider-wrapper theme-default">
-            <div id="slider" class="nivoSlider">
-                <img src="images/banner2.jpg"  alt="" />
-               	<img src="images/banner1.jpg"  alt="" />
-                <img src="images/banner3.jpg"  alt="" />
-            </div>
-        </div>
-	</div>
-</div>
-	<div class="main">
-		<div class="content-top">
-				<div>
-					<div class="title-img">
-						<div class="title"><img src="images/h1.png" style="width:25%;" alt=""></div>
-							<div class="title-desc"><p>Diamond Hastanesi</p></div>
-							<div class="clear"></div> 
+			<div class="banner">
+				<div id="wrapper">
+					<div class="slider-wrapper theme-default">
+						<div id="slider" class="nivoSlider">
+							<img src="images/banner1.jpg" />
+							<img src="images/banner2.jpg" />
+							<img src="images/banner3.jpg" />
+							<img src="images/banner4.jpg" />
+						</div>
 					</div>
-					<h4 class=head>Vizyonumuz</h4>
-						<p>
-							Diamond Hastanesi, sağlık sektöründe mükemmeliyeti benimseyen ve toplumun sağlığını güçlendirmeyi amaçlayan bir vizyona sahiptir. Modern tıbbi teknolojileri kullanarak, hasta odaklı bir yaklaşım benimseyerek, etik değerlere bağlı kalarak, her geçen gün daha iyi bir sağlık hizmeti sunmayı hedeflemektedir.
-						</p>
-					<hr>
-					<h4 class=head>Misyonumuz</h4>
-						<p>
-							Diamond Hastanesi, hastalarına uzman bir sağlık hizmeti sunmayı, sürekli eğitim ve gelişimle kalite standartlarını yükseltmeyi ve toplum sağlığını iyileştirmeyi misyon edinmiştir. Hasta memnuniyetini en üst düzeye çıkarmak, güvenilir ve etik bir anlayışla tedavi sunmak, yenilikçi çözümler geliştirmek ve toplumsal sorumluluk bilinciyle hareket etmek Diamond Hastanesi'nin temel misyonunu oluşturmaktadır.
-						</p>
-					<hr>
-					<h4 class=head>Hizmetler</h4>
-						<p>
-							Diamond Hastanesi, geniş bir sağlık hizmetleri yelpazesi sunarak hastalarına kapsamlı bir tedavi imkanı sağlar. Bu hizmetler arasında genel cerrahi, iç hastalıkları, kadın doğum, çocuk sağlığı, radyoloji, laboratuvar hizmetleri, acil servis ve daha birçok branş bulunmaktadır. Teknolojik altyapısı ve uzman kadrosuyla hastalarına modern, güvenilir ve etkili sağlık hizmetleri sunmaktadır.
-							<hr>
-							Diamond Hastanesi, hasta odaklı yaklaşımıyla ve kaliteli sağlık hizmetleriyle tanınan bir kurum olmayı amaçlamaktadır. Hastalarına güvenli, etik değerlere uygun ve bilimsel temellere dayalı bir tedavi sunarak toplumun sağlık standartlarını yükseltmeye katkıda bulunmayı hedeflemektedir.
-						</p>
-					<hr>
-				</div>
-				
-				<div class="clear"></div>
-		<div class="title-img">
-						<div class="title"><img src="images/h2.png" style="width:25%;" alt=""></div>
-						<div class="title-desc"><p>POLİKLİNİKLER</p></div>
-						<div class="clear"></div>
-		</div>
-		<div class="content-bottom">
-			<div class="col_1_of_bottom span_1_of_bottom">
-							<img src="images/pic.jpg" style="width:100%;" alt="" />
-				<div class="main_link">
-						<h5>Genel Cerrahi</h5>
-							<p> Genel cerrahi, vücuttaki çeşitli organlarda ortaya çıkabilen geniş bir yelpazedeki sorunları ele alır.</p>
 				</div>
 			</div>
-				<div class="col_1_of_bottom span_1_of_bottom">
-							<img src="images/pic1.jpg" style="width:94%;" alt="" />
-				     <div class="main_link">
-						<h5>Dahiliye</h5>
-								<p>Dahiliye, yetişkinlerin iç organlarının hastalıkları ve genel sağlık sorunlarını ele alır. </p>
+			<div class="main">
+				<div class="content-top">
+					<div>
+						<div class="title-desc"><p>HAKKIMIZDA</p><hr></div>
+						<div class="clear"></div>
 					</div>
+					<p>Sakarya şehrinin önde gelen sağlık kuruluşlarından biri olan Beyza Hastanesi 2002 yılında kurulmuştur. Amacımız hasta odaklı yaklaşımımız ve uzman kadromuz ile toplumumuza kaliteli sağlık hizmetlerini sunmaktır.</p>
+					<hr><hr>
 				</div>
-				<div class="col_1_of_bottom span_1_of_last">
-							<img src="images/pic3.jpg" style="width:104%;" alt="" />
-				     <div class="main_link">
-						<h5>Kardiyoloji</h5>
-								<p>Kardiyoloji, kalp ve damar sistemindeki hastalıkları inceleyen, tanı koyan ve tedavi eden tıp dalıdır.</p>
-					</div>
-				 </div>
-				
-						<a href="#" class="btn btn-primary" style="margin-top: 20px;
-							text-align: left; background-color: #d9155c;color: white;">more</a>
-				<div class="clear"></div> 
+				<div class="clear"></div>
+
+				<div>
+					<div class="title-desc"><p>VİZYONUMUZ</p><hr></div>
+					<div class="clear"></div>
+				</div>
+				<p>
+					Sağlıklı bir toplum için öncü sağlık hizmetleri sunmak.
+				</p>
+				<hr><hr><hr>
+			</div>
+
+			<div class="clear"></div>
+
+			<div>
+				<div class="title-desc"><p>MİSYONUMUZ</p><hr></div>
+				<div class="clear"></div>
+			</div>
+			<p>
+				Hasta memnuniyetini ön planda tutarak bilimsel gelişmelere açık, etik değerlere bağlı, sürekli eğitim ve teknolojiyi kullanarak sağlık hizmeti sunmak.
+			</p>
+			<hr>
+
+		</div>
+
+		<div class="content-bottom">
+			<div class="col_1_of_bottom span_1_of_bottom">
+				<img src="images/pic.jpg" alt="" />
+				<div class="main_link">
+					<h5>AĞIZ VE DİŞ SAĞLIĞI</h5>
+					<p style="text-transform: none; font-size: 15px;">Bireylerin oral sağlıklarını koruma, tedavi ve geliştirmeye odaklanarak modern tıbbi teknoloji ve uzman kadrosuyla geniş bir diş hekimliği hizmeti sunmaktadır.</p>
+				</div>
+
+			</div>
+			<div class="col_1_of_bottom span_1_of_bottom">
+				<img src="images/pic1.jpg" alt="" />
+				<div class="main_link">
+					<h5>DAHİLİYE</h5>
+					<p style="text-transform: none; font-size: 16px;">İç hastalıkları konusunda uzmanlaşmış bir birim olarak, çeşitli tanı ve tedavi yöntemleriyle genel sağlık sorunlarına çözüm sunar.</p>
+				</div>
+			</div>
+			<div class="col_1_of_bottom span_1_of_bottom">
+				<img src="images/pic2.jpg" alt="" />
+				<div class="main_link">
+					<h5>NÖROLOJİ</h5>
+					<p style="text-transform: none; font-size: 16px;">Sinir sistemi hastalıkları ve bozukluklarına yönelik ileri teknoloji kullanarak nörolojik muayene, tanı, tedavi ve takip hizmetleri sunmaktadır.</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+
+			<div style="display: flex; justify-content: center; align-items: center;">
+				<a href="#" class="btn btn-primary">more</a>   <br /><br /><br /><br />
+			</div>
 		</div>
 	</div>
-	<div class="footer">
-		<div class="footer-top">
-				<div class="col_1_of_4 span_1_of_4">
-					<h3>INFORMATION</h3>
-					<ul>
-						<li><a href="#">About us</a></li>
-						<li><a href="#">Sitemap</a></li>
-						<li><a href="#">Contact</a></li>
-						<li><a href="#">Terms and conditions</a></li>
-						<li><a href="#">Legal Notice</a></li>
-					</ul>
-				</div>
-				<div class="col_1_of_4 span_1_of_4">
-					<h3>CATEGORIES</h3>
-					<ul>
-						<li><a href="#">New products</a></li>
-						<li><a href="#">top sellers</a></li>
-						<li><a href="#">Specials</a></li>
-						<li><a href="#">Products</a></li>
-						<li><a href="#">Comments</a></li>
-					</ul>
-				</div>
-				<div class="col_1_of_4 span_1_of_4">
-					<h3>My ACCOUNT</h3>
-					<ul>
-						<li><a href="#">Your Account</a></li>
-						<li><a href="#">Personal info</a></li>
-						<li><a href="#">Prices</a></li>
-						<li><a href="#">Address</a></li>
-						<li><a href="#">Locations</a></li>
-					</ul>
-				</div>
-				<div class="col_1_of_4 span_1_of_4 footer-lastgrid">
-					<h3>BİZE ULAŞIN</h3>
-					<ul class="list3">
-						<li>
-						<img src="images/home.png" alt=""/>
-						<div class="extra-wrap">
-						<p>Sakarya üniversitesi,<br>Bilgisayar ve Bilişim Bilimleri Fakültesi.</p>
-						</div>
-						</li>
-						<li>
-						<img src="images/phone.png" alt=""/>
-						<div class="extra-wrap">
-						<p>+90 555 444 3232</p>
-						</div>
-						</li>
-						</ul>
-			    </div>
-				<div class="clear"></div> 
-		</div>
-		<div class="copy">
-			<p> © 2023 SAKARYA ÜNİVERSİTESİ | Design by İREM DEĞERLİ</a></p>
-		</div>
+	<div>
+		@RenderBody()
 	</div>
-  </div>
-</div>
-<div>
-	@RenderBody()
-</div>
+
+	<footer class="footer">
+		<div class="container">
+			<p align="center">&copy; 2023 | Beyza Çağlı tarafından tasarlandı.<a asp-area="" asp-controller="Home" asp-action="Privacy"></a></p>
+		</div>
+	</footer>
+	<br />
+	<br />
 </body>
 </html>
