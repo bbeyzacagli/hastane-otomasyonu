@@ -48,15 +48,17 @@
 						<a class="actionButton" href="@Url.Action("Login", "Giris")">Giriş Yap</a>
 						<a class="actionButton" href="@Url.Action("randevuAl", "RandevuAl")">Randevu Al</a>
 						<a class="actionButton" href="@Url.Action("Register", "Giris")">Kayıt Ol</a>
+						<button onclick="changeLanguage('en-US')" style="text-align:right; float: right; margin-top: 20px;">English</button>
 					</div>
 
 			<div class="clear"></div> 
 		</div>
+
 		<div class="header-bottom">
 			<div id="cssmenu">
 				<ul>
 				   <li class="active"><a href="@Url.Action("Index", "Home")"><span>ANASAYFA</span></a></li>
-				   <li><a href="services.html"><span>POLİKLİNİKLER</span></a></li>
+				   <li><a href="@Url.Action("Poliklinik", "Home")"><span>POLİKLİNİKLER</span></a></li>
 				   <li><a href="@Url.Action("Iletisim", "Home")"><span>İLETİŞİM BİLGİLERİ</span></a></li>
 				</ul>
 			</div>
@@ -64,6 +66,7 @@
 			<div class="clear"></div> 
 		</div>
 	</div>
+
 			<div class="banner">
 				<div id="wrapper">
 					<div class="slider-wrapper theme-default">
@@ -141,7 +144,7 @@
 			<div class="clear"></div>
 
 			<div style="display: flex; justify-content: center; align-items: center;">
-				<a href="#" class="btn btn-primary">more</a>   <br /><br /><br /><br />
+				<a href="@Url.Action("Poliklinik", "Home")" class="btn btn-primary">more</a>   <br /><br /><br /><br />
 			</div>
 		</div>
 	</div>
