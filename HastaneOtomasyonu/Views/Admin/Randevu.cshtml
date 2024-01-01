@@ -1,13 +1,12 @@
-﻿@model List<HastaneOtomasyonu.Models.Doktorlar>
-
+﻿@model List<HastaneOtomasyonu.Models.Randevu>
 @{
-    ViewData["Title"] = "DoktorListele";
+    ViewData["Title"] = "Randevu";
     Layout = "~/Views/Shared/_AdminPanelLayout.cshtml";
 }
 
+
 <div id="page-wrapper">
     <div class="main-page">
-      @*   <h3 class="title1">Tüm Doktorlar</h3> *@
         <div class="blank-page widget-shadow scroll" id="style-2 div1">
             <section class="section_container booking_container">
                 <div class="booking__nav">
@@ -23,13 +22,13 @@
                     th, td {
                         border: 1px solid #dddddd;
                         text-align: left;
-                        padding: 12px; 
+                        padding: 12px;
                     }
 
                     th {
-                        background-color: #EF9BFC; 
-                        color: white; 
-                        font-weight: bold; 
+                        background-color: #EF9BFC;
+                        color: white;
+                        font-weight: bold;
                     }
 
                     tr:nth-child(even) {
@@ -43,24 +42,30 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Doktor No</th>
+                            <th>Randevu No</th>
+                            <th>Hasta TC</th>
+                            <th>Hasta Adı</th>
+                            <th>Hasta Soyadı</th>
                             <th>Doktor Adı</th>
                             <th>Doktor Soyadı</th>
-                            <th>Doktor Maili</th>
-                            <th>Doktor Bölümü</th>
+                            <th>Randevu Tarihi</th>
+                            <th>Randevu Saati</th>
                         </tr>
                     </thead>
                     <tbody>
                         @if (Model != null)
                         {
-                            @foreach (var doktor in Model)
+                            @foreach (var randevu in Model)
                             {
                                 <tr>
-                                    <td>@doktor.DoktorlarId</td>
-                                    <td>@doktor.DoktorlarAd</td>
-                                    <td>@doktor.DoktorlarSoyad</td>
-                                    <td>@doktor.DoktorlarMail</td>
-                                    <td>@doktor.DoktorlarBolum</td>
+                                    <td>@randevu.RandevuId</td>
+                                    <td>@randevu.Tc</td>
+                                    <td>@randevu.HastalarAd</td>
+                                    <td>@randevu.HastalarSoyad</td>
+                                    <td>@randevu.DoktorlarAd</td>
+                                    <td>@randevu.DoktorlarSoyad</td>
+                                    <td>@randevu.RandevuTarih</td>
+                                    <td>@randevu.RandevuSaati</td>
                                 </tr>
                             }
                         }

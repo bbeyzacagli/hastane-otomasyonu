@@ -25,14 +25,15 @@ namespace HastaneOtomasyonu.Models
         [Required(ErrorMessage = "Şifre boş bırakılamaz")]
         [Display(Name = "Şifre")]
         [DataType(DataType.Password)]
-        [MinLength(6, ErrorMessage = "Şifreniz en az 6 karakterden oluşmalı"), MaxLength(15, ErrorMessage = "Şifreniz en fazla 15 karakterden oluşmalı!")]
+        [MinLength(3, ErrorMessage = "Şifreniz en az 3 karakterden oluşmalı"), MaxLength(15, ErrorMessage = "Şifreniz en fazla 15 karakterden oluşmalı!")]
         public string? Password { get; set; }
 
         [Required(ErrorMessage = "Şifre boş bırakılamaz")]
         [Display(Name = "Şifreyi onaylayınız")]
         [Compare("Password", ErrorMessage = "Şifreler eşleşmedi")]
         [DataType(DataType.Password)]
-        [MinLength(6, ErrorMessage = "Şifreniz en az 6 karakterden oluşmalı"), MaxLength(15, ErrorMessage = "Şifreniz en fazla 15 karakterden oluşmalı!")]
+        [MinLength(3, ErrorMessage = "Şifreniz en az 3 karakterden oluşmalı"), MaxLength(15, ErrorMessage = "Şifreniz en fazla 15 karakterden oluşmalı!")]
         public string? CPassword { get; set; }
+        public string? Role { get; set; }
     }
 }

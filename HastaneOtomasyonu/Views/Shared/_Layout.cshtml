@@ -25,7 +25,7 @@
 				<a href="@Url.Action("Index", "Home")"><img src="images/logo.png" alt="logo" style="width: 30%;" /></a>
 				</div>
 					<style>
-						#randevuAlButtonContainer {
+						#ButtonContainer {
 							margin-top: 20px;
 							text-align: right;
 						}
@@ -42,13 +42,13 @@
 							cursor: pointer;
 							margin-right: 10px;
 						}
+
 					</style>
 
-					<div id="randevuAlButtonContainer">
-						<a class="actionButton" href="@Url.Action("Login", "Giris")">Giriş Yap</a>
-						<a class="actionButton" href="@Url.Action("randevuAl", "RandevuAl")">Randevu Al</a>
+					<div id="ButtonContainer">
 						<a class="actionButton" href="@Url.Action("Register", "Giris")">Kayıt Ol</a>
-						<button onclick="changeLanguage('en-US')" style="text-align:right; float: right; margin-top: 20px;">English</button>
+						<a class="actionButton" href="@Url.Action("Login", "Giris")">Giriş Yap</a>
+						<a class="actionButton" href="@Url.Action("Index", "Randevu")">Randevu Al</a>
 					</div>
 
 			<div class="clear"></div> 
@@ -60,9 +60,10 @@
 				   <li class="active"><a href="@Url.Action("Index", "Home")"><span>ANASAYFA</span></a></li>
 				   <li><a href="@Url.Action("Poliklinik", "Home")"><span>POLİKLİNİKLER</span></a></li>
 				   <li><a href="@Url.Action("Iletisim", "Home")"><span>İLETİŞİM BİLGİLERİ</span></a></li>
+		       	  
 				</ul>
 			</div>
-
+				
 			<div class="clear"></div> 
 		</div>
 	</div>

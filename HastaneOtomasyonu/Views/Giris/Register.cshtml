@@ -70,23 +70,23 @@
         <form action="Register" method="post">
             <div class="form-group">
                 <label for="firstName">İsim</label>
-                <input type="text" id="firstName" name="FirstName" placeholder="İsim" required>
+                <input type="text" id="firstName" name="FirstName" placeholder="İsim" autocomplete="firstName" required>
             </div>
             <div class="form-group">
                 <label for="lastName">Soyisim</label>
-                <input type="text" id="lastName" name="LastName" placeholder="Soyisim" required>
+                <input type="text" id="lastName" name="LastName" placeholder="Soyisim" autocomplete="lastName" required>
             </div>
             <div class="form-group">
                 <label for="email">E-mail</label>
-                <input type="email" id="email" name="Email" placeholder="E-mail" required>
+                <input type="email" id="email" name="Email" placeholder="E-mail" autocomplete="email" required>
             </div>
             <div class="form-group">
                 <label for="password">Şifre</label>
-                <input type="password" id="password" name="Password" placeholder="Şifre" required>
+                <input type="password" id="password" name="Password" placeholder="Şifre" autocomplete="password" required>
             </div>
             <div class="form-group">
                 <label for="confirmPassword">Şifre Onayla</label>
-                <input type="password" id="confirmPassword" name="CPassword" placeholder="Şifre Onayla" required>
+                <input type="password" id="confirmPassword" name="CPassword" placeholder="Şifre Onayla" autocomplete="confirmPassword" required>
             </div>
             <button id="btn-register">Kaydol</button>
         </form>

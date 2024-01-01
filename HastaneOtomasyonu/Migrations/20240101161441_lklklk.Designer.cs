@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HastaneOtomasyonu.Migrations
 {
     [DbContext(typeof(HastaneCS))]
-    [Migration("20231215115232_addTable")]
-    partial class addTable
+    [Migration("20240101161441_lklklk")]
+    partial class lklklk
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -125,10 +125,6 @@ namespace HastaneOtomasyonu.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("HastalarKanGrubu")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("HastalarSoyad")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -171,6 +167,9 @@ namespace HastaneOtomasyonu.Migrations
                         .IsRequired()
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)");
+
+                    b.Property<string>("Role")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("KullaniciHesapId");
 
@@ -220,6 +219,9 @@ namespace HastaneOtomasyonu.Migrations
                     b.Property<string>("HastalarSoyad")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("RandevuSaati")
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("RandevuTarih")
                         .HasColumnType("datetime2");

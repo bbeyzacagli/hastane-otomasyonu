@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace HastaneOtomasyonu.Views.NewFolder
+namespace HastaneOtomasyonu.Views.Admin
 {
-    public class IletisimModel : PageModel
+    public class IndexGModel : PageModel
     {
         public void OnGet()
         {

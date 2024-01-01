@@ -1,9 +1,11 @@
 ﻿using HastaneOtomasyonu.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace HastaneOtomasyonu.Controllers
 {
+	[Authorize(Roles ="Admin")]
 	public class AdminController : Controller
 	{
 		private readonly HastaneCS hastaneCS;
@@ -77,9 +79,10 @@ namespace HastaneOtomasyonu.Controllers
 			return View(poliklinikler);
 		}
 
-		public IActionResult Randevu()
+		public async Task<IActionResult> Randevu()
 		{
-			return View();
+			var randevular = await hastaneCS.Randevular.ToListAsync();
+			return View(randevular);
 		}
 
 		[HttpGet]

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace HastaneOtomasyonu.Migrations
 {
     /// <inheritdoc />
-    public partial class addTable : Migration
+    public partial class jkllkj : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -68,8 +68,7 @@ namespace HastaneOtomasyonu.Migrations
                     HastalarSoyad = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     HastalarTelNo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     HastalarDogumTarihi = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    HastalarCinsiyet = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    HastalarKanGrubu = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    HastalarCinsiyet = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -86,7 +85,8 @@ namespace HastaneOtomasyonu.Migrations
                     LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
-                    CPassword = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false)
+                    CPassword = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
+                    Role = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -118,7 +118,8 @@ namespace HastaneOtomasyonu.Migrations
                     HastalarSoyad = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DoktorlarAd = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DoktorlarSoyad = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    RandevuTarih = table.Column<DateTime>(type: "datetime2", nullable: true)
+                    RandevuTarih = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    RandevuSaati = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
